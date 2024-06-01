@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOrgreens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+
+    <nav>
+        <a href="index.html"><img src="images/logo-removebg-preview.png"></a>
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="find-us.html">FIND US</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+<div class="text-box">
+    <h1>VOrgreens</h1>
+    <p>Indonesia's plant-based eatery chain serving delicious healthy, ethical, and sustainable food</p>
+    <a href="about-us.html" class="hero-btn">Visit Us To Know More</a>
+</div>
+
+</section>
+
+<!-- appealing menu -->
+
+<section class="menu">
+
+    <h1>Appealing Menus</h1>
+    <p>Favored mostly in these whole eatery</p>
+
+    <div class="row">
+        <div class="menu-col">
+            <a href="">
+                <img src="images/holy_barley_quinoa.jpg">
+                <div class="layer">
+                    <h3>Holy Barley Quinoa with Tofu Katsu</h3>
+                </div>
+            </a>
+        </div>
+        <div class="menu-col">
+            <a href="">
+                <img src="images/mini_trio.jpg">
+                <div class="layer">
+                    <h3>Mini Trio</h3>
+                </div>
+            </a>
+        </div>
+        <div class="menu-col">
+            <a href="">
+                <img src="images/moonlight_berry_bowl.jpg">
+                <div class="layer">
+                    <h3>Moonlight Berry Bowl</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Call To Action -->
+
+<section class="cta">
+
+    <h1>Enjoying our diet?<br>Contact us!</h1>
+    <a href="contact-us.html" class="hero-btn">CONTACT US</a>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p>This website is originally created by 2 person with an initial name of Jer and Vic<br>Copyrights of this website is by us and created by us</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made by Jer Vic</p>
+
+</section>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

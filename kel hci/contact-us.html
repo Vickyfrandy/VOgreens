@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOrgreens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+
+    <nav>
+        <a href="index.html"><img src="images/logo-removebg-preview.png"></a>
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="find-us.html">FIND US</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+
+</section>
+
+<!-- register -->
+
+<section class="register">
+
+    <div class="row">
+        <div class="register-col">
+
+            <form action="" id="form">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="email" name="email" id="email" placeholder="Enter email address">
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                <textarea rows="5" name="message" placeholder="Enter message"></textarea>
+                <input type="checkbox" name="" id="checkbox">
+                <label for="checkbox">Subscribe to our channel</label>
+                <button type="submit" class="hero-btn red-btn">Submit</button>
+            </form>
+
+        </div>
+        <div class="register-col">
+            <img src="images/register.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p>This website is originally created by 2 person with an initial name of Jer and Vic<br>Copyrights of this website is by us and created by us</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made by Jer Vic</p>
+
+</section>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
